@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MatchMatch">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="@string/title_activity_regist_account" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <cn.bingoogolapple.qrcode.zxing.ZXingView
+        android:id="@+id/zxingview"
+        style="@style/MatchMatch"
+        android:layout_below="@+id/app_bar_layout"
+        app:qrcv_animTime="2000"
+        app:qrcv_barCodeTipText="@string/DeviceManagerActivity_tv18"
+        app:qrcv_borderColor="@android:color/white"
+        app:qrcv_borderSize="1dp"
+        app:qrcv_cornerColor="#8EC1A0"
+        app:qrcv_cornerLength="20dp"
+        app:qrcv_cornerSize="3dp"
+        app:qrcv_isBarcode="false"
+        app:qrcv_isOnlyDecodeScanBoxArea="true"
+        app:qrcv_isScanLineReverse="true"
+        app:qrcv_isShowDefaultGridScanLineDrawable="true"
+        app:qrcv_isShowDefaultScanLineDrawable="false"
+        app:qrcv_isShowTipBackground="true"
+        app:qrcv_isShowTipTextAsSingleLine="false"
+        app:qrcv_isTipTextBelowRect="false"
+        app:qrcv_maskColor="#33FFFFFF"
+        app:qrcv_qrCodeTipText="@string/DeviceManagerActivity_tv19"
+        app:qrcv_rectWidth="200dp"
+        app:qrcv_scanLineColor="#8EC1A0"
+        app:qrcv_scanLineMargin="0dp"
+        app:qrcv_scanLineSize="1dp"
+        app:qrcv_tipTextColor="@android:color/white"
+        app:qrcv_tipTextSize="12sp"
+        app:qrcv_toolbarHeight="0dp"
+        app:qrcv_topOffset="180dp" />
+
+    <LinearLayout
+        style="@style/MatchWrap.Vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp">
+
+        <LinearLayout style="@style/MatchWrap.Vertical">
+
+            <TextView
+                android:id="@+id/start_spot"
+                style="@style/AutoWrapTv"
+                android:text="@string/DeviceManagerActivity_tv20"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/stop_spot"
+                style="@style/AutoWrapTv"
+                android:text="@string/DeviceManagerActivity_tv21"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/control_flashlight"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:src="@mipmap/icon_light_off"
+                android:text="@string/DeviceManagerActivity_tv22" />
+
+            <TextView
+                android:id="@+id/tv_flashlight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dip"
+                android:gravity="center"
+                android:text="@string/DeviceManagerActivity_tv16"
+                android:textColor="@android:color/darker_gray" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

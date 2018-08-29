@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="@dimen/px_500"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/transparent"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="8dp"
+    app:cardMaxElevation="8dp"
+    app:cardUseCompatPadding="true">
+
+    <!--android:layout_width="@dimen/px_500"-->
+    <ImageView
+        android:id="@+id/card_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/transparent"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_mask"
+        android:visibility="visible" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <FrameLayout
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_gravity="right|top">
+
+            <TextView
+                android:id="@+id/tv_setdefault"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dip"
+                android:text="@string/TeamManagerActivity_tv43"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px_24" />
+
+
+            <ImageView
+                android:id="@+id/iv_chooesed"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/icon_teamdefaultchooes"
+                android:visibility="visible" />
+
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/tv_teamname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dip"
+            android:gravity="center"
+            android:text="马冬梅的团队"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px_30" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dip"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/jointext"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center|right"
+                android:text="@string/TeamManagerActivity_tv44"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px_24" />
+
+
+            <TextView
+                android:id="@+id/tv_joindays"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/px_25"
+                android:gravity="center|left"
+                android:text="59"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px_90" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center|right"
+                android:layout_marginLeft="@dimen/px_25"
+                android:text="@string/TeamManagerActivity_tv45"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px_24" />
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+</RelativeLayout>

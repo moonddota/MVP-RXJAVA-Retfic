@@ -1,0 +1,419 @@
+<resources>
+    <string name="skylinuav_url">http://www.skylinuav.com/</string>
+    <!--<string name="skylinuav_url">http://www.idu.com/</string>-->
+
+    <string name="app_language_pref_key" translatable="false">app_language_pref_key</string>
+
+    <string name="APPNAME">天麒服务</string>
+
+    <string name="setting_language_auto">跟随系统</string>
+    <string name="setting_language_english">English</string>
+    <string name="setting_simplified_chinese">简体中文</string>
+    <string name="setting_traditional_chinese">繁體中文</string>
+
+    <string name="no_connectivity">No connectivity</string>
+    <string name="unknown_error">Unknown Error</string>
+    <string name="try_again">Try Again</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_phone">新手机号</string>
+    <string name="prompt_password">密码</string>
+    <string name="prompt_newpassword">新密码</string>
+    <string name="prompt_validnum">验证码</string>
+
+    <string name="action_sign_in">登录</string>
+    <string name="action_sign_getvalidnum">获取验证码</string>
+    <string name="registacount">注册</string>
+    <string name="login_tv_forggotpwd">忘记密码</string>
+
+
+    <string name="error_login_failed_account_pwd_not_thesame">账号或用户名错误</string>
+
+
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+
+    <!-- Strings related to regist -->
+    <string name="title_activity_regist_account">注册新账号</string>
+    <string name="title_activity_regist_btn_title">注册</string>
+    <string name="title_activity_regist_tips">密码6-10位,包含字母和数字组合</string>
+    <string name="title_activity_regist_btn_content">提交</string>
+
+
+    <string name="title_activity_error_phoneformat">电话格式错误</string>
+    <string name="title_activity_error_pwdformat">密码格式错误</string>
+
+
+    <!-- Strings related to forggotpwd -->
+    <string name="activity_forggot_title">忘记密码</string>
+    <string name="activity_forggot_btn_content">提交</string>
+
+    <!-- Strings related to changephone -->
+    <string name="activity_changephone_title">修改手机</string>
+
+    <string name="activity_changephone_origial_phonevalid">原验证码</string>
+
+    <!-- Strings related to Settings -->
+
+    <string name="setting_activity_title">设置</string>
+    <string name="setting_activity_dialog_titile">修改昵称</string>
+    <string name="setting_activity_dialog_key">昵称</string>
+    <string name="setting_activity_dialog_savebtn">保存</string>
+    <string name="setting_activity_dialog_edit_hint">请输入昵称</string>
+    <string name="setting_activity_about">关于</string>
+
+    <!-- Strings related to DeviceManager -->
+
+    <string name="main_activity_devicemanager_title">我的设备</string>
+    <string name="main_activity_devicemanager_menu_title">添加</string>
+
+
+    <string name="main_activity_devicemanager_item_fly_name">名称</string>
+    <string name="main_activity_devicemanager_item_sn">SN</string>
+    <string name="main_activity_devicemanager_item_product_date">生产</string>
+    <string name="main_activity_devicemanager_item_fly_type">型号</string>
+    <string name="main_activity_devicemanager_item_control_center_id">飞控ID</string>
+    <string name="main_activity_devicemanager_item_regist_date">注册</string>
+
+    <string name="main_activity_devicemanager_dialog_tips">您正在注销设备,请输入完整手机号确认</string>
+    <string name="main_activity_devicemanager_dialog_btn_name">注销</string>
+
+
+    <!-- Strings related to SCANManager -->
+
+
+    <string name="activity_scan_menu_one">手动添加</string>
+    <string name="activity_scan_title">扫描</string>
+
+    <!-- Strings related to SCANManueal -->
+    <string name="activity_manuel_scan_menu_one">扫描</string>
+    <string name="activity_manuel_title">手动添加</string>
+
+    <string name="activity_manuel_prompt_sn">设备SN</string>
+    <string name="activity_manuel_prompt_activtednum">激活码</string>
+
+    <string name="activity_manuel_prompt_tips">注意事项</string>
+    <string name="activity_manuel_prompt_btn_name">绑定</string>
+
+
+    <!-- Strings related to teammanager -->
+    <string name="activity_teammanager_title">团队管理</string>
+    <string name="activity_teammanager_btn_createteam">创建团队</string>
+
+    <string name="activity_teammanager_btn_createteam_teamname_hints">团队名称</string>
+    <string name="activity_teammanager_btn_createteam_defaultday_hints">有效期(天)</string>
+    <string name="activity_teammanager_btn_createteam_tips">超过有效期后将重新登录,默认为1天</string>
+    <string name="activity_teammanager_btn_createteam_btn_name">确认</string>
+
+    <string name="activity_teammanager_create_title">创建团队</string>
+
+    <!-- Strings related to teamlist -->
+
+    <string name="activity_teammanager_teamlist_title">飞行小分队</string>
+    <string name="activity_teammanager_teamlist_btn_inveite">邀请成员</string>
+    <string name="activity_teammanager_teamlist_menu_name">编辑</string>
+
+    <!-- Strings related to teaminvete -->
+
+    <string name="activity_teammanager_teaminvte">编辑</string>
+    <string name="activity_teammanager_teaminvte_titel">邀请成员</string>
+    <string name="activity_teammanager_teaminvte_hint_skylinaccount">天麒账号或手机号</string>
+    <string name="activity_teammanager_teaminvte_hint_beizhu">备注</string>
+    <string name="activity_teammanager_teaminvte_btn_name">邀请</string>
+
+    <string name="activity_teammanager_menu_one">编辑</string>
+
+
+    <!-- Strings related to teamchangemember -->
+    <string name="activity_teammanager_teamchange_title">修改成员</string>
+    <string name="activity_teammanager_teamchange_btn_name">修改</string>
+    <string name="activity_teammanager_teamchange_btn__delete_name">删除</string>
+
+
+    <!-- Strings related to editteam -->
+
+    <string name="activity_teammanager_edit_title">编辑团队</string>
+
+
+    <!-- Strings related to softcenter -->
+
+    <string name="activity_softcenter_title">应用中心</string>
+    <string name="activity_softcenter_menu_title">全部下载</string>
+
+
+    <!-- Strings related to Main -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="title_activity_test">TestActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_scan">扫描</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="cancle">取消</string>
+    <string name="title">请选择时间</string>
+    <string name="commit">确定</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="hour">时</string>
+    <string name="minute">分</string>
+
+    <string name="app_name">日期选择控件</string>
+    <string name="select_date">选择日期</string>
+    <string name="current_date">当前日期</string>
+    <string name="select_time">选择时间</string>
+    <string name="current_time">当前时间</string>
+
+    <!--DeviceManagerActivity-->
+    <string name="DeviceManagerActivity_tv1">植保机</string>
+    <string name="DeviceManagerActivity_tv2">基准站</string>
+    <string name="DeviceManagerActivity_tv3">无法连接到网络</string>
+    <string name="DeviceManagerActivity_tv4">连接异常，请重试</string>
+    <string name="DeviceManagerActivity_tv5">设备详情</string>
+    <string name="DeviceManagerActivity_tv6">未安装固件中心,请到天麒服务下载该软件</string>
+    <string name="DeviceManagerActivity_tv7">设备名 </string>
+    <string name="DeviceManagerActivity_tv8">生产日期</string>
+    <string name="DeviceManagerActivity_tv9">注册日期</string>
+    <string name="DeviceManagerActivity_tv10">打开固件中心</string>
+    <string name="DeviceManagerActivity_tv11">注销设备</string>
+    <string name="DeviceManagerActivity_tv12">注销设备后所有成员不可操作此设备,但该指令仅在成员下次联网是生效</string>
+    <string name="DeviceManagerActivity_tv13">解绑设备</string>
+    <string name="DeviceManagerActivity_tv14">绑定成功</string>
+    <string name="DeviceManagerActivity_tv15">扫码无效,请重新扫描</string>
+    <string name="DeviceManagerActivity_tv16">打开手电筒</string>
+    <string name="DeviceManagerActivity_tv17">关闭手电筒</string>
+    <string name="DeviceManagerActivity_tv18">将条码放入框内，即可自动扫描</string>
+    <string name="DeviceManagerActivity_tv19">请扫描激活卡上的二维码</string>
+    <string name="DeviceManagerActivity_tv20">开始识别</string>
+    <string name="DeviceManagerActivity_tv21">暂停识别</string>
+    <string name="DeviceManagerActivity_tv22">开灯</string>
+    <string name="DeviceManagerActivity_tv23">解绑成功</string>
+    <string name="DeviceManagerActivity_tv24">验证码已发送</string>
+    <string name="DeviceManagerActivity_tv25">注销设备</string>
+    <string name="DeviceManagerActivity_tv26">确认注销</string>
+    <string name="DeviceManagerActivity_tv27">注销后成员不可操作此设备，但该指令仅在成员下次联网时生效</string>
+    <string name="DeviceManagerActivity_tv28">注册的手机号</string>
+    <string name="DeviceManagerActivity_tv29">授权界面</string>
+
+    <!--MacLIstActivity-->
+    <string name="MacLIstActivity_tv1">团队拥有飞机列表</string>
+    <string name="MacLIstActivity_tv2">暂无可操控飞机</string>
+
+    <!--MainActivity-->
+    <string name="MainActivity_tv1">实名认证</string>
+    <string name="MainActivity_tv2">更新</string>
+    <string name="MainActivity_tv3">有新版本的天麒服务,是否下载?</string>
+    <string name="MainActivity_tv4">当前已经是最新版本</string>
+    <string name="MainActivity_tv5">是</string>
+    <string name="MainActivity_tv6">请到设置界面打开权限</string>
+    <string name="MainActivity_tv7">否</string>
+    <string name="MainActivity_tv8">获取APP信息失败</string>
+    <string name="MainActivity_tv9">请先通过实名认证</string>
+    <string name="MainActivity_tv10">已通过实名认证</string>
+    <string name="MainActivity_tv11">未通过实名认证</string>
+    <string name="MainActivity_tv12">应用中心</string>
+    <string name="MainActivity_tv13">我的设备</string>
+    <string name="MainActivity_tv14">个人中心</string>
+    <string name="MainActivity_tv15">团队管理</string>
+    <string name="MainActivity_tv16">管理您的作业团队</string>
+    <string name="MainActivity_tv17">再按一次退出</string>
+    <string name="MainActivity_tv18">您有</string>
+    <string name="MainActivity_tv19">个应用未安装</string>
+    <string name="MainActivity_tv20">个应用未更新</string>
+    <string name="MainActivity_tv21">绑定了</string>
+    <string name="MainActivity_tv22">个设备</string>
+    <string name="MainActivity_tv23">早上好</string>
+    <string name="MainActivity_tv24">下午好</string>
+    <string name="MainActivity_tv25">晚上好</string>
+    <string name="MainActivity_tv26">下载</string>
+    <string name="MainActivity_tv27">正在下载中</string>
+    <string name="MainActivity_tv28">下载完成</string>
+
+    <!--DateChooseActivity-->
+    <string name="DateChooseActivity_tv1">选择时间</string>
+    <string name="DateChooseActivity_tv2">开始时间不能晚于结束时间</string>
+    <string name="DateChooseActivity_tv3">请选择时间</string>
+    <string name="DateChooseActivity_tv4">全部</string>
+    <string name="DateChooseActivity_tv5">今日</string>
+    <string name="DateChooseActivity_tv6">昨日</string>
+    <string name="DateChooseActivity_tv7">近七天</string>
+    <string name="DateChooseActivity_tv8">近15天</string>
+    <string name="DateChooseActivity_tv9">近30天</string>
+    <string name="DateChooseActivity_tv10">到</string>
+    <string name="DateChooseActivity_tv11">确认</string>
+    <string name="DateChooseActivity_tv12">选择</string>
+    <string name="DateChooseActivity_tv13">全部团队</string>
+    <string name="DateChooseActivity_tv14">全部飞手</string>
+    <string name="DateChooseActivity_tv15">全部飞机</string>
+    <string name="DateChooseActivity_tv16">个人中心</string>
+    <string name="DateChooseActivity_tv17">全部时间</string>
+    <string name="DateChooseActivity_tv18">实名认证成功</string>
+    <string name="DateChooseActivity_tv19">天麒账号:</string>
+    <string name="DateChooseActivity_tv20">去认证</string>
+    <string name="DateChooseActivity_tv21">作业统计</string>
+    <string name="DateChooseActivity_tv22">全部时间</string>
+    <string name="DateChooseActivity_tv23">查看明细</string>
+    <string name="DateChooseActivity_tv24">作业亩数</string>
+    <string name="DateChooseActivity_tv25">作业小时</string>
+    <string name="DateChooseActivity_tv26">作业个数</string>
+    <string name="DateChooseActivity_tv27">没有可选飞手</string>
+    <string name="DateChooseActivity_tv28">暂未获取到团队信息,请稍后重试</string>
+    <string name="DateChooseActivity_tv29">暂未获取到飞机信息,请稍后重试</string>
+    <string name="DateChooseActivity_tv30">暂未获取到飞手信息,请稍后重试</string>
+    <string name="DateChooseActivity_tv31">条件已清空</string>
+    <string name="DateChooseActivity_tv32">分</string>
+    <string name="DateChooseActivity_tv33">秒</string>
+    <string name="DateChooseActivity_tv34">月</string>
+    <string name="DateChooseActivity_tv35">亩</string>
+    <string name="DateChooseActivity_tv36">作业明细</string>
+    <string name="DateChooseActivity_tv37">暂无作业记录</string>
+    <string name="DateChooseActivity_tv39">清空查询条件</string>
+    <string name="DateChooseActivity_tv40">设备管理</string>
+    <string name="DateChooseActivity_tv41">所属团队 </string>
+
+    <!--SettingActivity-->
+    <string name="SettingActivity_tv1">修改设备名称</string>
+    <string name="SettingActivity_tv2">不能包含表情符</string>
+    <string name="SettingActivity_tv3">昵称中不能包含表情符</string>
+    <string name="SettingActivity_tv4">检测到新版本，是否下载更新？</string>
+    <string name="SettingActivity_tv5">检查更新</string>
+    <string name="SettingActivity_tv6">确认要注销当前账号?</string>
+    <string name="SettingActivity_tv7">url数据为空，不可跳转</string>
+    <string name="SettingActivity_tv8">删除?</string>
+    <string name="SettingActivity_tv9">是否删除此APP缓存?</string>
+    <string name="SettingActivity_tv10">全部更新</string>
+    <string name="SettingActivity_tv11">继续下载失败</string>
+    <string name="SettingActivity_tv12">打开</string>
+    <string name="SettingActivity_tv13">安装</string>
+
+    <!--TeamManagerActivity-->
+    <string name="TeamManagerActivity_tv1">团队名称中不能包含表情符</string>
+    <string name="TeamManagerActivity_tv2">删除团队</string>
+    <string name="TeamManagerActivity_tv3">删除将不可恢复，所有成员不可操作您的设备，但该指令仅在成员下次联网时生效</string>
+    <string name="TeamManagerActivity_tv4">邀请成功</string>
+    <string name="TeamManagerActivity_tv6">成员账号中不能包含表情符</string>
+    <string name="TeamManagerActivity_tv7">备注名称中不能包含表情符</string>
+    <string name="TeamManagerActivity_tv9">备注名不能为空</string>
+    <string name="TeamManagerActivity_tv10">删除成功</string>
+    <string name="TeamManagerActivity_tv11">删除失败</string>
+    <string name="TeamManagerActivity_tv12">剔除成员</string>
+    <string name="TeamManagerActivity_tv13">确认剔除该成员吗?</string>
+    <string name="TeamManagerActivity_tv14">权限不足</string>
+    <string name="TeamManagerActivity_tv15">邀请团队成员,你需要先通过实名认证,是否跳转到实名认证界面?</string>
+    <string name="TeamManagerActivity_tv16">信息已保存</string>
+    <string name="TeamManagerActivity_tv17">退出团队</string>
+    <string name="TeamManagerActivity_tv18">确认退出该团队吗?</string>
+    <string name="TeamManagerActivity_tv19">关于团队</string>
+    <string name="TeamManagerActivity_tv20">1. 团队添加成员使用邀请制，填入成员的天麒账号或手机号即加入团队。</string>
+    <string name="TeamManagerActivity_tv21">2. 在团队中的成员均有团队的所有设备的使用权，即使成员离开了团队也需要该成员再次联网登录才可刷新使用权。</string>
+    <string name="TeamManagerActivity_tv22">3. 您可以设置设备使用权时间，当超过该时间后，团队成员需要再次联网登录账号。授权时间越长，成员可离线操作时间越长，相对的也越不安全，您可根据实际情况设置。</string>
+    <string name="TeamManagerActivity_tv23">1. 团队添加成员使用邀请制，填入成员的天麒账号或手机号即加入团队。</string>
+    <string name="TeamManagerActivity_tv24">2. 在团队中的成员均有团队的所有设备的使用权，即使成员离开了团队也需要该成员再次联网登录才可刷新使用权。</string>
+    <string name="TeamManagerActivity_tv25">3. 您可以设置设备使用权时间，当超过该时间后，团队成员需要再次联网登录账号。授权时间越长，成员可离线操作时间越长，相对的也越不安全，您可根据实际情况设置。</string>
+    <string name="TeamManagerActivity_tv26">原手机号</string>
+    <string name="TeamManagerActivity_tv27">密码中不能包含表情符</string>
+    <string name="TeamManagerActivity_tv28">绑定失败</string>
+    <string name="TeamManagerActivity_tv29">绑定手机</string>
+    <string name="TeamManagerActivity_tv30">格式不正确</string>
+    <string name="TeamManagerActivity_tv31">您尚未安装微信!</string>
+    <string name="TeamManagerActivity_tv32">欢迎使用</string>
+    <string name="TeamManagerActivity_tv33">天麒服务</string>
+    <string name="TeamManagerActivity_tv34">手机号</string>
+    <string name="TeamManagerActivity_tv35">请输入手机号</string>
+    <string name="TeamManagerActivity_tv36">请输入验证码</string>
+    <string name="TeamManagerActivity_tv37">您还未绑定手机</string>
+    <string name="TeamManagerActivity_tv39">分享失败</string>
+    <string name="TeamManagerActivity_tv40">登录被取消</string>
+    <string name="TeamManagerActivity_tv41">微信分享成功</string>
+    <string name="TeamManagerActivity_tv42">授权失败</string>
+    <string name="TeamManagerActivity_tv43">设为默认</string>
+    <string name="TeamManagerActivity_tv44">已加入</string>
+    <string name="TeamManagerActivity_tv45">天</string>
+    <string name="TeamManagerActivity_tv46">我创建的</string>
+    <string name="TeamManagerActivity_tv47">我加入的</string>
+    <string name="TeamManagerActivity_tv48">设备名</string>
+    <string name="TeamManagerActivity_tv49">团队切换</string>
+    <string name="TeamManagerActivity_tv50">切换团队将丢失当前未上传数据、失去飞机控制权限(含飞行中的飞机)，是否切换？</string>
+
+</resources>

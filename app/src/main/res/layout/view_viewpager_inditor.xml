@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="50dip"
+    android:layout_margin="10dip"
+    android:orientation="horizontal"
+    android:weightSum="10">
+
+
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:id="@+id/skylininditor_rl_left"
+        android:layout_height="match_parent"
+
+        android:layout_weight="5"
+        android:background="@mipmap/icon_top_bg">
+
+        <TextView
+            android:id="@+id/skylin_inditor_i_make"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/TeamManagerActivity_tv46"
+            android:textColor="@color/primary" />
+
+        <TextView
+            android:id="@+id/skylin_inditor_i_make_bottomline"
+            android:layout_width="match_parent"
+            android:layout_height="2dip"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="50dip"
+            android:layout_marginRight="50dip"
+            android:background="@color/primary" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:id="@+id/skylininditor_rl_right"
+        android:layout_height="match_parent"
+        android:layout_weight="5">
+
+        <TextView
+            android:id="@+id/skylin_inditor_i_join"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/TeamManagerActivity_tv47" />
+
+        <TextView
+            android:id="@+id/skylin_inditor_i_join_bottomline"
+            android:layout_width="match_parent"
+            android:layout_height="2dip"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="50dip"
+            android:layout_marginRight="50dip"
+            android:background="@android:color/darker_gray" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

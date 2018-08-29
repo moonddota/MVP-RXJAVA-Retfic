@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.set.SettingActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="@string/title_activity_regist_account" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!--<android.support.v7.widget.RecyclerView-->
+    <!--android:id="@+id/settingRecycle"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_below="@+id/app_bar_layout" />-->
+
+    <RelativeLayout
+        android:id="@+id/nick_rl"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_below="@+id/app_bar_layout"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+
+        <TextView
+            android:id="@+id/nick_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dip"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/setting_activity_dialog_key"
+            android:textColor="@color/skylin_black"
+            android:textSize="15sp" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dip">
+
+            <TextView
+                android:id="@+id/nick_content"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/nick_arrarow"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/icon_right_arraow" />
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/skylin_light_grey" />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/line_1"
+        android:layout_width="match_parent"
+        android:layout_height="10dip"
+        android:layout_below="@+id/nick_rl"
+        android:background="#EEE" />
+
+    <RelativeLayout
+        android:id="@+id/changephone_rl"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_below="@+id/line_1"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+
+        <TextView
+            android:id="@+id/changephone_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dip"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/activity_changephone_title"
+            android:textColor="@color/skylin_black"
+            android:textSize="15sp" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dip">
+
+            <TextView
+                android:id="@+id/changephone_content"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/setting_iv_arrarow"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/icon_right_arraow" />
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/skylin_light_grey" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/line_2"
+        android:layout_width="match_parent"
+        android:layout_height="10dip"
+        android:layout_below="@+id/changephone_rl"
+        android:background="#EEE" />
+
+
+    <RelativeLayout
+        android:id="@+id/skylin_account"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/line_2"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+
+        <TextView
+            android:id="@+id/skylin_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dip"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/DateChooseActivity_tv19"
+            android:textColor="@color/skylin_black"
+            android:textSize="15sp" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dip">
+
+            <TextView
+                android:id="@+id/skylin_content"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/skylin_arrarow"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/icon_right_arraow"
+                android:visibility="invisible" />
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="30dip"
+            android:layout_marginRight="30dip"
+            android:background="@color/skylin_light_grey" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/abount_rl"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_below="@+id/skylin_account"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+
+        <TextView
+            android:id="@+id/abount_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dip"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/setting_activity_about"
+            android:textColor="@color/skylin_black"
+            android:textSize="15sp" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dip">
+
+            <TextView
+                android:id="@+id/abount_content"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/abount_arrarow"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/icon_right_arraow" />
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="30dip"
+            android:layout_marginRight="30dip"
+            android:background="@color/skylin_light_grey" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/cehcek_rl"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_below="@+id/abount_rl"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+
+        <TextView
+            android:id="@+id/checck_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dip"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/SettingActivity_tv5"
+            android:textColor="@color/skylin_black"
+            android:textSize="15sp" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dip">
+
+            <TextView
+                android:id="@+id/checck_cotent"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/cehcek_arraow"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/skylin_light_grey" />
+
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/loggout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_110"
+        android:layout_alignParentBottom="true"
+        android:background="#666666"
+        android:text="@string/main_activity_devicemanager_dialog_btn_name"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.userrelative.login.regist.RegistAccountActivity"
+    tools:showIn="@layout/activity_regist_account">
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="20dip"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_5"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/px_35" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dip"
+                android:layout_marginTop="20dip"
+                android:layout_weight="10">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dip"
+                    android:layout_height="60dip"
+                    android:layout_weight="7">
+
+                    <EditText
+                        android:id="@+id/origital_valid_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/activity_changephone_origial_phonevalid"
+                        android:imeActionId="6"
+                        android:imeActionLabel="@string/action_sign_getvalidnum"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/origital_tv_getvalid_"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dip"
+                    android:layout_weight="3"
+                    android:background="@drawable/selector_green_bg_nocorner"
+                    android:gravity="center"
+                    android:text="@string/action_sign_getvalidnum"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dip"
+                android:layout_marginTop="20dip">
+
+                <AutoCompleteTextView
+                    android:id="@+id/cellphone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_phone"
+                    android:inputType="phone"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dip"
+                android:layout_weight="10">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dip"
+                    android:layout_height="60dip"
+                    android:layout_weight="7">
+
+                    <EditText
+                        android:id="@+id/reigist_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/prompt_validnum"
+                        android:imeActionId="6"
+                        android:imeActionLabel="@string/action_sign_getvalidnum"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/forgo_tv_getvalid_"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dip"
+                    android:layout_weight="3"
+                    android:background="@drawable/selector_green_bg_nocorner"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:text="@string/action_sign_getvalidnum"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/email_regsit_in_button"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dip"
+                android:background="@drawable/selector_green_bg_nocorner"
+                android:enabled="false"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/forggot_tips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:gravity="center"
+                android:text="@string/error_login_failed_account_pwd_not_thesame"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="15sp"
+                android:visibility="invisible" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

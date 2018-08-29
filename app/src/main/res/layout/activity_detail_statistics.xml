@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.personcenter.DetailStatisticsActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="@string/DateChooseActivity_tv36" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/choosell"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_below="@+id/app_bar_layout"
+
+        android:orientation="horizontal"
+        android:weightSum="20">
+
+        <LinearLayout
+            android:id="@+id/ll_selct_time"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="1dip"
+            android:layout_weight="10"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip">
+
+            <TextView
+                android:id="@+id/tv_select_time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableRight="@mipmap/icon_screen"
+                android:gravity="center"
+                android:text="@string/DateChooseActivity_tv17" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="10dip"
+            android:background="#DDDDDD" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_selct_team"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="1dip"
+            android:layout_weight="5"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+
+            android:paddingRight="10dip">
+
+            <TextView
+                android:id="@+id/tv_select_team"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableRight="@mipmap/icon_screen"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1"
+                android:singleLine="true"
+                android:text="@string/DateChooseActivity_tv13" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/hideView"
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="10dip"
+            android:background="#DDDDDD" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_selct_v02"
+
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="5"
+            android:orientation="horizontal"
+            android:paddingLeft="10dip"
+
+            android:paddingRight="10dip">
+
+            <TextView
+                android:id="@+id/tv_select_v02"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableRight="@mipmap/icon_screen"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1"
+                android:singleLine="true"
+                android:text="@string/DateChooseActivity_tv15" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_below="@+id/choosell"
+        android:background="#DDDDDD" />
+
+    <include
+        android:id="@+id/basedata"
+        layout="@layout/item_statiticsbasedata"
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:layout_below="@+id/line" />
+
+    <View
+        android:id="@+id/lineline"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_below="@+id/basedata"
+        android:background="#DDDDDD" />
+
+
+    <LinearLayout
+        android:id="@+id/zonglan"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_below="@+id/lineline"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/bottomfm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/zonglan"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <com.cjj.MaterialRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            app:overlay="false"
+            app:wave_color="@color/transparent"
+            app:wave_height_type="higher"
+            app:wave_show="true">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/list_recyleview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/red"
+                android:dividerHeight="1px"
+                android:footerDividersEnabled="false"
+                android:scrollbarSize="50dip"
+                android:scrollbars="none" />
+        </com.cjj.MaterialRefreshLayout>
+
+
+        <LinearLayout
+            android:id="@+id/no_hitoryll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dip"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_gravity="center"
+                android:layout_weight="5"
+                android:src="@mipmap/no_history" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/DateChooseActivity_tv37"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/tv_clearSelect"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dip"
+                    android:gravity="center"
+                    android:text="@string/DateChooseActivity_tv39"
+                    android:textColor="@color/primary"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</RelativeLayout>

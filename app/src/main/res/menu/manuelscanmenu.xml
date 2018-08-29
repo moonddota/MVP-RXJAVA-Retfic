@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@mipmap/icon_white_scan"
+        android:orderInCategory="100"
+        android:title="@string/activity_manuel_scan_menu_one"
+        app:showAsAction="always" />
+</menu>

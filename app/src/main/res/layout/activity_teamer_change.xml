@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.teammanager.invite.TeamerChangeActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="@string/title_activity_regist_account" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/app_bar_layout"
+        android:layout_margin="30dip"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dip"
+            android:layout_marginTop="20dip">
+
+            <AutoCompleteTextView
+                android:id="@+id/invite_skylin_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/activity_teammanager_teaminvte_hint_skylinaccount"
+                android:enabled="false"
+                android:inputType="text"
+                android:maxLength="11"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/expred_day_til"
+            android:layout_width="match_parent"
+            android:layout_height="60dip"
+            android:layout_marginTop="20dip">
+
+            <AutoCompleteTextView
+
+                android:id="@+id/invite_skylin_beizhu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="@string/activity_teammanager_teaminvte_hint_beizhu"
+                android:inputType="number"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/login_tv_forggotpwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:background="@android:color/white"
+            android:gravity="left"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="15sp" />
+
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="60dip"-->
+        <!--android:layout_weight="10">-->
+
+        <!--<android.support.design.widget.TextInputLayout-->
+        <!--android:layout_width="0dip"-->
+        <!--android:layout_height="60dip"-->
+        <!--android:layout_weight="7">-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/password"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:hint="@string/prompt_validnum"-->
+        <!--android:imeActionId="6"-->
+        <!--android:imeActionLabel="@string/action_sign_getvalidnum"-->
+        <!--android:imeOptions="actionUnspecified"-->
+        <!--android:inputType="textPassword"-->
+        <!--android:maxLines="1"-->
+        <!--android:singleLine="true" />-->
+
+        <!--</android.support.design.widget.TextInputLayout>-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/login_tv_getvalidnum"-->
+        <!--android:layout_width="0dip"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_weight="3"-->
+        <!--android:background="@android:color/white"-->
+        <!--android:gravity="center"-->
+        <!--android:text="@string/action_sign_getvalidnum"-->
+        <!--android:textColor="@color/login_btn_bg_normal" />-->
+
+        <!--</LinearLayout>-->
+
+
+        <Button
+            android:id="@+id/email_sign_in_button"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dip"
+            android:background="@drawable/selector_green_bg_nocorner"
+            android:enabled="false"
+            android:text="@string/activity_teammanager_teaminvte_btn_name"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:gravity="center"
+            android:text="@string/error_login_failed_account_pwd_not_thesame"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="15sp"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

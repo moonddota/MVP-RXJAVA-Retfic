@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mac_ll"
+    android:layout_width="match_parent"
+    android:layout_height="100dip"
+    android:layout_gravity="center_vertical"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingLeft="15dip"
+    android:weightSum="10">
+
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dip"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_weight="8">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dip"
+                    android:weightSum="4">
+
+                    <TextView
+                        android:id="@+id/tv_montn"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dip"
+                        android:layout_weight="1"
+                        android:gravity="bottom|right"
+                        android:text="3"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dip"
+                        android:layout_weight="2"
+                        android:gravity="bottom|left"
+                        android:text=""
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_day"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginTop="8dip"
+                    android:layout_weight="1"
+                    android:gravity="top|right"
+
+                    android:text="29"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginBottom="3dip"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="16:13:11"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="2dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="2dip"
+        android:layout_weight="8"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/tv_flytime"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:drawableLeft="@mipmap/icon_time"
+                android:drawablePadding="5dip"
+                android:gravity="center_vertical|left"
+
+                android:textColor="@android:color/black"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_area"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dip"
+                android:layout_weight="4"
+                android:drawableLeft="@mipmap/icon_total"
+
+
+                android:drawablePadding="5dip"
+                android:gravity="center_vertical|left"
+                android:textColor="@android:color/black"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/icon_location"
+            android:drawablePadding="5dip"
+            android:ellipsize="end"
+            android:gravity="center_vertical|left"
+
+            android:lines="1"
+
+            android:singleLine="true"
+            android:textSize="13sp" />
+
+
+        <TextView
+            android:id="@+id/tv_team"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/icon_person"
+
+            android:drawablePadding="5dip"
+            android:gravity="center_vertical|left"
+            android:textSize="13sp" />
+
+
+        <app.com.skylinservice.manager.customeview.MarqueTextView
+            android:id="@+id/tv_flyname"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/icon_uav"
+
+            android:drawablePadding="5dip"
+            android:ellipsize="marquee"
+
+            android:gravity="left|center_vertical"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textSize="13sp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

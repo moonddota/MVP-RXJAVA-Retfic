@@ -1,0 +1,415 @@
+<resources>
+    <string name="skylinuav_url">http://www.skylinuav.com/</string>
+    <!--<string name="skylinuav_url">http://www.idu.com/</string>-->
+
+    <string name="APPNAME">Skylin Service</string>
+
+    <string name="no_connectivity">No connectivity</string>
+    <string name="unknown_error">Unknown Error</string>
+    <string name="try_again">Try Again</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_phone">Mobile phone Number</string>
+    <string name="prompt_password">Passwords</string>
+    <string name="prompt_newpassword">New passwords</string>
+    <string name="prompt_validnum">Code</string>
+
+
+    <string name="action_sign_in">Login</string>
+    <string name="action_sign_getvalidnum">Get a Code</string>
+    <string name="registacount">Register</string>
+    <string name="login_tv_forggotpwd">Forget the passwords</string>
+
+
+    <string name="error_login_failed_account_pwd_not_thesame">Error account or username</string>
+
+
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+
+    <!-- Strings related to regist -->
+    <string name="title_activity_regist_account">Register a new account</string>
+    <string name="title_activity_regist_btn_title">Register</string>
+    <string name="title_activity_regist_tips">Passwords are 6-10 letters and numbers combination</string>
+    <string name="title_activity_regist_btn_content">Submit</string>
+
+
+    <string name="title_activity_error_phoneformat">Phone format error</string>
+    <string name="title_activity_error_pwdformat">Passwords format error</string>
+
+
+    <!-- Strings related to forggotpwd -->
+    <string name="activity_forggot_title">Forget the passwords</string>
+    <string name="activity_forggot_btn_content">Submit</string>
+
+    <!-- Strings related to changephone -->
+    <string name="activity_changephone_title">New phone numbers</string>
+
+    <string name="activity_changephone_origial_phonevalid">Origial code</string>
+
+    <!-- Strings related to Settings -->
+
+    <string name="setting_activity_title">Set up</string>
+    <string name="setting_activity_dialog_titile">Edit nickname</string>
+    <string name="setting_activity_dialog_key">Nickname</string>
+    <string name="setting_activity_dialog_savebtn">Save</string>
+    <string name="setting_activity_dialog_edit_hint">Sign in nickname</string>
+    <string name="setting_activity_about">About</string>
+
+    <!-- Strings related to DeviceManager -->
+
+    <string name="main_activity_devicemanager_title">My Device</string>
+    <string name="main_activity_devicemanager_menu_title">Add in</string>
+
+
+    <string name="main_activity_devicemanager_item_fly_name">Device Name</string>
+    <string name="main_activity_devicemanager_item_sn">SN</string>
+    <string name="main_activity_devicemanager_item_product_date">Porduction Date</string>
+    <string name="main_activity_devicemanager_item_fly_type">Model Number</string>
+    <string name="main_activity_devicemanager_item_control_center_id"> Flight Control ID</string>
+    <string name="main_activity_devicemanager_item_regist_date">Register</string>
+
+    <string name="main_activity_devicemanager_dialog_tips">You are Log off the device now,Pls sign in the mobile phone number for confirmation</string>
+    <string name="main_activity_devicemanager_dialog_btn_name">Log off</string>
+
+
+    <!-- Strings related to SCANManager -->
+
+
+    <string name="activity_scan_menu_one">Manual add</string>
+    <string name="activity_scan_title">Scan</string>
+
+    <!-- Strings related to SCANManueal -->
+    <string name="activity_manuel_scan_menu_one">Scan</string>
+    <string name="activity_manuel_title">Manual</string>
+    <string name="activity_manuel_prompt_sn">SN</string>
+    <string name="activity_manuel_prompt_activtednum">Activation code</string>
+
+    <string name="activity_manuel_prompt_tips">Notice</string>
+    <string name="activity_manuel_prompt_btn_name">Connection</string>
+
+
+    <!-- Strings related to teammanager -->
+    <string name="activity_teammanager_title">Team manager</string>
+    <string name="activity_teammanager_btn_createteam">Building new team</string>
+
+    <string name="activity_teammanager_btn_createteam_teamname_hints">Team </string>
+    <string name="activity_teammanager_btn_createteam_defaultday_hints">Period of validity(day)</string>
+    <string name="activity_teammanager_btn_createteam_tips">After the validity period, it will be re logged in</string>
+    <string name="activity_teammanager_btn_createteam_btn_name">Confirm</string>
+
+    <string name="activity_teammanager_create_title">Buildind new team</string>
+
+    <!-- Strings related to teamlist -->
+
+    <string name="activity_teammanager_teamlist_title">Operator</string>
+    <string name="activity_teammanager_teamlist_btn_inveite">Invited members</string>
+    <string name="activity_teammanager_teamlist_menu_name">Edit</string>
+
+    <!-- Strings related to teaminvete -->
+
+    <string name="activity_teammanager_teaminvte">Edit</string>
+    <string name="activity_teammanager_teaminvte_titel">Invited members</string>
+    <string name="activity_teammanager_teaminvte_hint_skylinaccount">Skylin account or Mobile phone number</string>
+    <string name="activity_teammanager_teaminvte_hint_beizhu">Note</string>
+    <string name="activity_teammanager_teaminvte_btn_name">Invitation</string>
+
+    <string name="activity_teammanager_menu_one">Edit</string>
+
+
+    <!-- Strings related to teamchangemember -->
+    <string name="activity_teammanager_teamchange_title">Manage Team members</string>
+    <string name="activity_teammanager_teamchange_btn_name">Revise</string>
+    <string name="activity_teammanager_teamchange_btn__delete_name">Delete</string>
+
+
+    <!-- Strings related to editteam -->
+
+    <string name="activity_teammanager_edit_title">Team management</string>
+
+
+    <!-- Strings related to softcenter -->
+
+    <string name="activity_softcenter_title">Soft Center</string>
+    <string name="activity_softcenter_menu_title">Download all</string>
+
+
+    <!-- Strings related to Main -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="title_activity_test">TestActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_scan">Scan</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="cancle">Cancel</string>
+    <string name="title">Choice Time</string>
+    <string name="commit">Confirm</string>
+    <string name="year">Year</string>
+    <string name="month">Month</string>
+    <string name="day">Date</string>
+    <string name="hour">Hour</string>
+    <string name="minute">Minute</string>
+
+    <string name="app_name">Date Selection</string>
+    <string name="select_date">Select date</string>
+    <string name="current_date">Current date</string>
+    <string name="select_time">Select time</string>
+    <string name="current_time">Current time</string>
+
+    <!--DeviceManagerActivity-->
+    <string name="DeviceManagerActivity_tv1">UAV</string>
+    <string name="DeviceManagerActivity_tv2">RTK Station</string>
+    <string name="DeviceManagerActivity_tv3">Unable to connect to network</string>
+    <string name="DeviceManagerActivity_tv4">Connection error, please try again</string>
+    <string name="DeviceManagerActivity_tv5">Device Details</string>
+    <string name="DeviceManagerActivity_tv6">Donot find the device,pls download in Skylin Service</string>
+    <string name="DeviceManagerActivity_tv7">Device Name </string>
+    <string name="DeviceManagerActivity_tv8">Production Date</string>
+    <string name="DeviceManagerActivity_tv9">Registration Date</string>
+    <string name="DeviceManagerActivity_tv10">Opening Firmware Center</string>
+    <string name="DeviceManagerActivity_tv11">Log off</string>
+    <string name="DeviceManagerActivity_tv12">All members can not control operate this device after the cancellation </string>
+    <string name="DeviceManagerActivity_tv13">Untie Device</string>
+    <string name="DeviceManagerActivity_tv14">Successful connection</string>
+    <string name="DeviceManagerActivity_tv15">The scan code is invalid. Please scan again.</string>
+    <string name="DeviceManagerActivity_tv16">Turn on the flashlight</string>
+    <string name="DeviceManagerActivity_tv17">Turn off the flashlight</string>
+    <string name="DeviceManagerActivity_tv18">The bar code can be automatically scanned by placing it </string>
+    <string name="DeviceManagerActivity_tv19">Please scan the two-dimensional code on the activation card</string>
+    <string name="DeviceManagerActivity_tv20">Start identification</string>
+    <string name="DeviceManagerActivity_tv21">Temporary stop</string>
+    <string name="DeviceManagerActivity_tv22">Open</string>
+    <string name="DeviceManagerActivity_tv23">Untie successfully</string>
+    <string name="DeviceManagerActivity_tv24">Code has been sent</string>
+    <string name="DeviceManagerActivity_tv25">Log off device</string>
+    <string name="DeviceManagerActivity_tv26">Confirm</string>
+    <string name="DeviceManagerActivity_tv27">All members can not control operate this device after the cancellation</string>
+    <string name="DeviceManagerActivity_tv28">Registed mobile phone number</string>
+    <string name="DeviceManagerActivity_tv29">Authorized interface</string>
+
+    <!--MacLIstActivity-->
+    <string name="MacLIstActivity_tv1">UAV List</string>
+    <string name="MacLIstActivity_tv2">There is no UAV</string>
+
+    <!--MainActivity-->
+    <string name="MainActivity_tv1">Authorized name</string>
+    <string name="MainActivity_tv2">Update</string>
+    <string name="MainActivity_tv3">Finding the new version of Skylin service, do you want to update?</string>
+    <string name="MainActivity_tv4">The version is the latest</string>
+    <string name="MainActivity_tv5">Confirm</string>
+    <string name="MainActivity_tv6">Please set up the interface to open permissions</string>
+    <string name="MainActivity_tv7">Cancel</string>
+    <string name="MainActivity_tv8">Fail to receive App information</string>
+    <string name="MainActivity_tv9">Please pass the authentication first.</string>
+    <string name="MainActivity_tv10">Pass to authenticated name</string>
+    <string name="MainActivity_tv11">Fail to authenticated name</string>
+    <string name="MainActivity_tv12">Soft center</string>
+    <string name="MainActivity_tv13">My Device</string>
+    <string name="MainActivity_tv14">Personal center</string>
+    <string name="MainActivity_tv15">Team management</string>
+    <string name="MainActivity_tv16">Manage working team</string>
+    <string name="MainActivity_tv17">Press exit again</string>
+    <string name="MainActivity_tv18">You have</string>
+    <string name="MainActivity_tv19">app not installed</string>
+    <string name="MainActivity_tv20">applications not updated</string>
+    <string name="MainActivity_tv21">Connected</string>
+    <string name="MainActivity_tv22">device</string>
+    <string name="MainActivity_tv23">Goodmorning</string>
+    <string name="MainActivity_tv24">Goodafternoon</string>
+    <string name="MainActivity_tv25">Goodevening</string>
+    <string name="MainActivity_tv26">Download</string>
+    <string name="MainActivity_tv27">Download...</string>
+    <string name="MainActivity_tv28">Compeletely download</string>
+
+    <!--DateChooseActivity-->
+    <string name="DateChooseActivity_tv1">Select time</string>
+    <string name="DateChooseActivity_tv2">Start time can not later than completed time</string>
+    <string name="DateChooseActivity_tv3">Select time</string>
+    <string name="DateChooseActivity_tv4">All the time</string>
+    <string name="DateChooseActivity_tv5">Today</string>
+    <string name="DateChooseActivity_tv6">Yesterday</string>
+    <string name="DateChooseActivity_tv7">7 days</string>
+    <string name="DateChooseActivity_tv8">15 days</string>
+    <string name="DateChooseActivity_tv9">30 days</string>
+    <string name="DateChooseActivity_tv10">To</string>
+    <string name="DateChooseActivity_tv11">Confirm</string>
+    <string name="DateChooseActivity_tv12">Select</string>
+    <string name="DateChooseActivity_tv13">All teams</string>
+    <string name="DateChooseActivity_tv14">All operators</string>
+    <string name="DateChooseActivity_tv15">All UAVs</string>
+    <string name="DateChooseActivity_tv16">Personal center</string>
+    <string name="DateChooseActivity_tv17">All the time</string>
+    <string name="DateChooseActivity_tv18">Successful authentication </string>
+    <string name="DateChooseActivity_tv19">Skylin account</string>
+    <string name="DateChooseActivity_tv20">Go to authenticate</string>
+    <string name="DateChooseActivity_tv21">Working statistics</string>
+    <string name="DateChooseActivity_tv22">All the time</string>
+    <string name="DateChooseActivity_tv23">Look at more details</string>
+    <string name="DateChooseActivity_tv24">Mu</string>
+    <string name="DateChooseActivity_tv25">Working Hours</string>
+    <string name="DateChooseActivity_tv26">Working numbers</string>
+    <string name="DateChooseActivity_tv27">No operators</string>
+    <string name="DateChooseActivity_tv28">Team information not yet available, please try again later</string>
+    <string name="DateChooseActivity_tv29">UAV information not yet available, please try again later</string>
+    <string name="DateChooseActivity_tv30">Operator information not yet available, please try again later</string>
+    <string name="DateChooseActivity_tv31">Condition is empty</string>
+    <string name="DateChooseActivity_tv32">Minute</string>
+    <string name="DateChooseActivity_tv33">Second</string>
+    <string name="DateChooseActivity_tv34">Month</string>
+    <string name="DateChooseActivity_tv35">Mu</string>
+    <string name="DateChooseActivity_tv36">Working details</string>
+    <string name="DateChooseActivity_tv37">No working records</string>
+    <string name="DateChooseActivity_tv39">Delete conditions</string>
+    <string name="DateChooseActivity_tv40">Device management</string>
+    <string name="DateChooseActivity_tv41">Belong to </string>
+
+    <!--SettingActivity-->
+    <string name="SettingActivity_tv1">Revise device name</string>
+    <string name="SettingActivity_tv2">Can not contain emoticons</string>
+    <string name="SettingActivity_tv3">Nicknames can not contain emoticons</string>
+    <string name="SettingActivity_tv4">New version detected. Download update?</string>
+    <string name="SettingActivity_tv5">Checking update</string>
+    <string name="SettingActivity_tv6">Are you sure to log off this account?</string>
+    <string name="SettingActivity_tv7">Url data is empty and can not transfer</string>
+    <string name="SettingActivity_tv8">Cancel?</string>
+    <string name="SettingActivity_tv9">Delete this APP cache?</string>
+    <string name="SettingActivity_tv10">All updating</string>
+    <string name="SettingActivity_tv11">Failed to continue downloading</string>
+    <string name="SettingActivity_tv12">Open</string>
+    <string name="SettingActivity_tv13">Install</string>
+
+    <!--TeamManagerActivity-->
+    <string name="TeamManagerActivity_tv1">Can not contain emoticons</string>
+    <string name="TeamManagerActivity_tv2">Delete team name</string>
+    <string name="TeamManagerActivity_tv3">All members can not control operate this device after the cancellation</string>
+    <string name="TeamManagerActivity_tv4">Successful invitation</string>
+    <string name="TeamManagerActivity_tv6">Can not contain emoticons</string>
+    <string name="TeamManagerActivity_tv7">Can not contain emoticons</string>
+    <string name="TeamManagerActivity_tv9">Note can not be empty</string>
+    <string name="TeamManagerActivity_tv10">Successful delete</string>
+    <string name="TeamManagerActivity_tv11">Fail to delete</string>
+    <string name="TeamManagerActivity_tv12">Remove members</string>
+    <string name="TeamManagerActivity_tv13">Are you sure to remove this member?</string>
+    <string name="TeamManagerActivity_tv14">Insufficient permissions</string>
+    <string name="TeamManagerActivity_tv15">you need to pass the real name authentication first when you invite team members,  whether to transfer to the name authentication interface?</string>
+    <string name="TeamManagerActivity_tv16">Save information</string>
+    <string name="TeamManagerActivity_tv17">Exit from team</string>
+    <string name="TeamManagerActivity_tv18">Exit?</string>
+    <string name="TeamManagerActivity_tv19">About Team</string>
+    <string name="TeamManagerActivity_tv20">1. Needing the Skylin account or mobile phone number to add new members</string>
+    <string name="TeamManagerActivity_tv21">2. Team members have access to all of the devices</string>
+    <string name="TeamManagerActivity_tv22">3. Team members need to log in again after setting time.You can set time according to the actual situation.</string>
+    <string name="TeamManagerActivity_tv23">1. Needing the Skylin account or mobile phone number to add new members</string>
+    <string name="TeamManagerActivity_tv24">2. eam members have access to all of the devices</string>
+    <string name="TeamManagerActivity_tv25">3. Team members need to log in again after setting time.You can set time according to the actual situation.</string>
+    <string name="TeamManagerActivity_tv26">Original mobile phone number</string>
+    <string name="TeamManagerActivity_tv27">Can not contain emoticons</string>
+    <string name="TeamManagerActivity_tv28">Connection failed</string>
+    <string name="TeamManagerActivity_tv29">Connected with mobile phone</string>
+    <string name="TeamManagerActivity_tv30">Incorrect format</string>
+    <string name="TeamManagerActivity_tv31">You have not installed WeChat!</string>
+    <string name="TeamManagerActivity_tv32">WELCOME</string>
+    <string name="TeamManagerActivity_tv33">Skylin Service</string>
+    <string name="TeamManagerActivity_tv34">Tel</string>
+    <string name="TeamManagerActivity_tv35">Mobile phone number</string>
+    <string name="TeamManagerActivity_tv36">Code</string>
+    <string name="TeamManagerActivity_tv37">You are not connect to your phone</string>
+    <string name="TeamManagerActivity_tv39">Share Failure</string>
+    <string name="TeamManagerActivity_tv40">Login canceled</string>
+    <string name="TeamManagerActivity_tv41">Successful sharing by WeChat</string>
+    <string name="TeamManagerActivity_tv42">Authorization failed</string>
+    <string name="TeamManagerActivity_tv43">Set default</string>
+    <string name="TeamManagerActivity_tv44">joined</string>
+    <string name="TeamManagerActivity_tv45">days</string>
+    <string name="TeamManagerActivity_tv46">Mine</string>
+    <string name="TeamManagerActivity_tv47">jioned</string>
+    <string name="TeamManagerActivity_tv48">name</string>
+    <string name="TeamManagerActivity_tv49">Team cut</string>
+    <string name="TeamManagerActivity_tv50">The switching team will lose the current unuploaded data and lose the aircraft control authority (including the aircraft in flight), is it switched?</string>
+
+
+
+
+</resources>

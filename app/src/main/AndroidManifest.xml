@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="app.com.skylinservice">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+
+
+    <!-- 扫码 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- <permission -->
+    <!-- android:name="app.com.skylinservice.sqlite.sqlitedteam" -->
+    <!-- android:label="content provider read" -->
+    <!-- android:protectionLevel="normal" /> -->
+    <!-- <permission -->
+    <!-- android:name="app.com.skylinservice.sqlite.read" -->
+    <!-- android:label="content provider read" -->
+    <!-- android:protectionLevel="normal" /> -->
+    <!-- <permission -->
+    <!-- android:name="app.com.skylinservice.sqlite.write" -->
+    <!-- android:label="content provider read write" -->
+    <!-- android:protectionLevel="normal" /> -->
+    <!-- 调用摄像头的权限 -->
+    <!-- 文件系统权限 -->
+    <!-- SD卡写权限 -->
+    <application
+        android:name=".AppApplication"
+        android:icon="@mipmap/icon_skylinservice"
+        android:label="@string/APPNAME"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name=".ui.guide.GuideActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.userrelative.login.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.userrelative.login.regist.RegistAccountActivity"
+            android:label="@string/title_activity_regist_account"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.userrelative.login.changpwdbyvalid.ForgotPwdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.set.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.device.DeviceManagerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.device.scan.ScanCodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.set.WebActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.device.manual.ManualInputActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.teammanager.TeamManagerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.teammanager.create.CreateTeamActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.teammanager.teamlist.TeamListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.teammanager.invite.InviteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.teammanager.edit.TeamEditActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.teammanager.invite.TeamerChangeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.teammanager.create.EditTeamActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.softcenter.SoftCenterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.userrelative.login.changephone.ChangePhoneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.device.unbind.UnbindActivity"
+            android:screenOrientation="portrait" />
+
+        <receiver
+            android:name=".ui.softcenter.InitApkBroadCastReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".ui.forauth.ForAuthActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="app.com.skylinservice.ui.forauth.ForAuthActivity" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.set.changenick.ChangeNickNameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.set.about.AboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.main.authed.AuthedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.device.devicedetail.DeviceDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.set.changenick.ChangeFlyNameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.maclist.MacLIstActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- <provider -->
+        <!-- android:name=".sqlite.TeamContentProvider" -->
+        <!-- android:authorities="app.com.skylinservice.sqlite.TeamContentProvider" -->
+        <!-- android:enabled="true" -->
+        <!-- android:exported="true" -->
+        <!-- android:permission="app.com.skylinservice.sqlite.sqlitedteam" -->
+        <!-- android:readPermission="app.com.skylinservice.sqlite.read" -->
+        <!-- android:writePermission="app.com.skylinservice.sqlite.write" /> -->
+
+        <activity
+            android:name=".ui.personcenter.DeviceStatisticesBaseActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.personcenter.persionstatistics.PersonStatisticesBaseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.personcenter.DetailStatisticsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.personcenter.choose.DateChooseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.personcenter.choose.TeamChooseActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

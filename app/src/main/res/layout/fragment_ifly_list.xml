@@ -1,0 +1,19 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.com.skylinservice.ui.device.devicefg.IFLyListFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.baoyz.widget.PullRefreshLayout
+        android:id="@+id/deviemanager_pullrefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/app_bar_layout">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/devicemanager_reclcyview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.baoyz.widget.PullRefreshLayout>
+</RelativeLayout>

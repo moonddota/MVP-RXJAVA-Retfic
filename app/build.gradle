@@ -1,0 +1,266 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'com.getkeepsafe.dexcount'
+
+def final circleBuild = System.getenv("CI") == "true"
+def final preDexEnabled = "true" == System.getProperty("pre-dex", "true") && !circleBuild
+def
+final dexInProcessEnabled = "true" == System.getProperty("dex-in-process", "true") && !circleBuild
+
+def commitCont = 'git rev-list HEAD --count'.execute([], project.rootDir).text.trim().toInteger()
+def shortHash = 'git log -1 --pretty=%h'.execute([], project.rootDir).text.trim().toUpperCase();
+def currentBranch = 'git symbolic-ref --short -q HEAD'.execute([], project.rootDir).text.trim()
+
+
+static def generateVersionCode() {
+    try {
+        def cmd = 'git rev-list --count HEAD'
+        cmd.execute().text.trim().toInteger()
+    } catch (ignored) {
+        1
+    }
+}
+
+static def generateVersionName() {
+    try {
+        def cmd = 'git describe --tags --abbrev=0'
+        cmd.execute().text.trim()
+    } catch (ignored) {
+        "1.0"
+    }
+}
+
+android {
+    compileSdkVersion rootProject.ext.targetSdkVersion
+
+
+    defaultConfig {
+        applicationId "app.com.skylinservice"
+
+        minSdkVersion rootProject.ext.mindkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+
+        versionCode 78
+
+        versionName "1.1.3.9"
+
+//        resConfigs "en", "pt-rBR"
+
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+    lintOptions {
+        disable 'MissingTranslation'
+    }
+
+//    dexOptions {
+//        preDexLibraries preDexEnabled
+//        dexInProcess = dexInProcessEnabled
+//    }
+
+    signingConfigs {
+        release {
+            keyAlias 'alias'
+            keyPassword '871010'
+            storeFile file('C:/Users/moon/Desktop/keystore.jks')
+            storePassword '871010'
+        }
+        debug {
+            keyAlias 'alias'
+            keyPassword '871010'
+            storeFile file('C:/Users/moon/Desktop/keystore.jks')
+            storePassword '871010'
+        }
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            useProguard false
+
+            signingConfig signingConfigs.release
+
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            minifyEnabled true
+            useProguard false
+
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+
+        debug.java.srcDirs += 'src/debug/kotlin'
+
+        test.java.srcDirs += 'src/test/kotlin'
+    }
+
+    flavorDimensions "environment"
+
+    productFlavors {
+        def STRING = "String"
+        def API_URL = "API_URL"
+        def SUF_URL_V3 = "SUF_URL_V3"
+        def SUF_URL_V2 = "SUF_URL_V2"
+
+        production {
+            dimension "environment"
+            versionCode 78
+            versionName "1.3.2" + "(" + shortHash + ")"
+            buildConfigField STRING, API_URL, "\"https://tool.skylinuav.com/\""
+            buildConfigField STRING, SUF_URL_V2, "\"work2.0/\""
+            buildConfigField STRING, SUF_URL_V3, "\"v3/\""
+
+            signingConfig signingConfigs.release
+        }
+
+        develServer {
+            dimension "environment"
+            versionCode 107
+            versionName "1.3.2.12" + "(" + shortHash + ")"
+            buildConfigField STRING, API_URL, "\"https://devel.skylinuav.com/\""
+            buildConfigField STRING, SUF_URL_V2, "\"work2.0/\""
+            buildConfigField STRING, SUF_URL_V3, "\"v3/\""
+
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    testOptions {
+        unitTests.all {
+            testLogging {
+                events 'passed', 'skipped', 'failed', 'standardOut', 'standardError'
+            }
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+}
+
+android.applicationVariants.all { variant ->
+    variant.outputs.all {
+        outputFileName = "SKYLINSERVICE-${currentBranch}-${variant.buildType.name}(${variant.versionCode})-${variant.versionName}.apk"
+    }
+}
+
+//android.applicationVariants.all { variant ->
+//    def mergedFlavor = variant.mergedFlavor
+//
+//    if (!variant.buildType.isDebuggable()) {
+//        mergedFlavor.versionCode = generateVersionCode()
+//        mergedFlavor.versionName = generateVersionName() + "." + generateVersionCode()
+//    }
+//}
+
+
+repositories {
+    google()
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'com.android.support:support-v4:27.0.1'
+    compile 'cn.dreamtobe.filedownloader:filedownloader-okhttp3-connection:1.0.0'
+    compile 'com.liulishuo.filedownloader:library:1.7.2'
+    compile 'android.arch.core:common:1.0.0'
+
+
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$rootProject.kotlinVersion"
+
+    implementation "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
+    implementation "com.android.support:design:$rootProject.supportLibraryVersion"
+    implementation "com.android.support:cardview-v7:$rootProject.supportLibraryVersion"
+    implementation "com.android.support:recyclerview-v7:$rootProject.supportLibraryVersion"
+
+    implementation "com.google.dagger:dagger:$rootProject.daggerVersion"
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    kapt "com.google.dagger:dagger-compiler:$rootProject.daggerVersion"
+
+    implementation "com.squareup.retrofit2:retrofit:$rootProject.retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$rootProject.retrofitVersion"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$rootProject.retrofitVersion"
+
+    implementation "com.squareup.okhttp3:okhttp:$rootProject.okHttpVersion"
+    implementation "com.squareup.okhttp3:logging-interceptor:$rootProject.okHttpVersion"
+
+    compileOnly 'org.glassfish:javax.annotation:10.0-b28'
+
+    implementation "io.reactivex.rxjava2:rxandroid:$rootProject.rxAndroidVersion"
+    implementation "io.reactivex.rxjava2:rxjava:$rootProject.rxJavaVersion"
+
+    debugImplementation "com.facebook.stetho:stetho:$rootProject.stethoVersion"
+    debugImplementation "com.facebook.stetho:stetho-okhttp3:$rootProject.stethoVersion"
+
+    implementation "com.jakewharton.timber:timber:$rootProject.timberVersion"
+
+    debugImplementation "com.squareup.leakcanary:leakcanary-android:$rootProject.leakCanaryVersion"
+    releaseImplementation "com.squareup.leakcanary:leakcanary-android-no-op:$rootProject.leakCanaryVersion"
+
+//    implementation "com.airbnb.android:epoxy:$rootProject.epoxyVersion"
+
+//    kapt "com.android.databinding:compiler:$rootProject.databindVersion"
+
+    implementation 'com.github.JakeWharton:ViewPagerIndicator:2.4.1'
+    implementation 'com.blankj:utilcode:1.6.4'
+//    implementation 'com.simplecityapps:recyclerview-fastscroll:1.0.16'
+    implementation 'org.xutils:xutils:3.5.0'
+    implementation 'com.baoyz.pullrefreshlayout:library:1.2.0'
+
+    implementation 'com.google.zxing:core:3.3.0'
+    implementation 'cn.bingoogolapple:bga-qrcodecore:1.1.9@aar'
+    implementation 'cn.bingoogolapple:bga-zxing:1.1.9@aar'
+
+    compile 'org.jetbrains.kotlinx:kotlinx-coroutines-core:0.20'
+
+
+    implementation 'com.dinuscxj:circleprogressbar:1.1.1'
+
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+//    compile 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
+
+    compile 'com.tbruyelle.rxpermissions2:rxpermissions:0.8.2@aar'
+//    compile 'com.tbruyelle.rxpermissions:rxpermissions:0.9.4@aar'
+
+    compile 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:1.0.2'
+
+    implementation 'com.sjianjun:permissionUtil:1.0.0'
+
+
+
+    implementation 'com.sjianjun:aLog:1.1.3'
+
+    compile 'com.github.open-android:WheelPicker:v1.0.0'
+
+    implementation project(':library')
+
+
+    testImplementation "junit:junit:$rootProject.junitVersion"
+    testImplementation "org.mockito:mockito-core:$rootProject.mockitoVersion"
+    testImplementation "org.hamcrest:hamcrest-all:$rootProject.hamcrestVersion"
+    testImplementation "org.jetbrains.kotlin:kotlin-reflect:$rootProject.kotlinVersion"
+    testImplementation("com.nhaarman:mockito-kotlin:$rootProject.mockitoKotlinVersion") {
+        exclude module: "kotlin-stdlib"
+        exclude module: "kotlin-reflect"
+    }
+
+
+    implementation 'org.greenrobot:eventbus:3.0.0'
+}

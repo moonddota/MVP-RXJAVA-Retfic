@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".ui.main.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#E2E5EC">
+
+        <ImageView
+            android:id="@+id/icon_set"
+            android:layout_width="@dimen/px_60"
+            android:layout_height="@dimen/px_66"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/px_27"
+            android:layout_marginLeft="@dimen/px_34"
+            android:paddingLeft="@dimen/px_10"
+            android:paddingRight="@dimen/px_10"
+            android:src="@mipmap/icon_set"
+            android:visibility="gone" />
+
+
+        <ImageView
+            android:id="@+id/icon_scan"
+            android:layout_width="@dimen/px_60"
+            android:layout_height="@dimen/px_66"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/px_27"
+            android:layout_marginRight="@dimen/px_34"
+            android:paddingLeft="@dimen/px_10"
+            android:paddingRight="@dimen/px_10"
+            android:src="@mipmap/icon_scan" />
+
+    </RelativeLayout>
+
+    <!--<android.support.design.widget.AppBarLayout-->
+    <!--android:id="@+id/app_bar_layout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:theme="@style/AppTheme.AppBarOverlay">-->
+
+    <!--<android.support.v7.widget.Toolbar-->
+    <!--android:id="@+id/toolbar"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="?attr/actionBarSize"-->
+    <!--android:background="?attr/colorPrimary"-->
+    <!--app:popupTheme="@style/AppTheme.PopupOverlay"-->
+    <!--app:title="@string/title_activity_regist_account" />-->
+
+    <!--</android.support.design.widget.AppBarLayout>-->
+
+    <!--<com.baoyz.widget.PullRefreshLayout-->
+    <!--android:id="@+id/top_pull"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="320dip"-->
+    <!--android:layout_below="@+id/app_bar_layout"-->
+
+    <!--&gt;-->
+
+
+    <LinearLayout
+        android:id="@+id/top_bannder"
+        android:layout_width="match_parent"
+        android:layout_height="320dip"
+        android:layout_below="@+id/app_bar_layout"
+        android:background="@mipmap/bg_home"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/px_32">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_230"
+            android:background="@color/skylin_light_blue"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/px_45">
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/px_60"
+                android:layout_weight="6"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_70"
+                    android:gravity="left"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/px_18">
+
+                    <TextView
+                        android:id="@+id/main_ask_tips"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="start"
+                        android:textColor="@android:color/black"
+                        android:textSize="18dp" />
+
+
+                    <app.com.skylinservice.manager.customeview.MarqueTextView
+                        android:id="@+id/main_ask_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="start|bottom"
+                        android:layout_toRightOf="@+id/main_ask_tips"
+                        android:ellipsize="marquee"
+                        android:gravity="bottom|start"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:singleLine="true"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/text_size_38_px" />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/main_softcenter_tips"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_42"
+                    android:layout_marginTop="@dimen/px_23"
+                    android:paddingLeft="@dimen/px_18"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/text_size_30_px" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/px_10"
+                android:layout_marginBottom="@dimen/px_10"
+                android:layout_weight="4"
+                android:paddingLeft="@dimen/px_18"
+                android:src="@mipmap/icon_default_home" />
+        </LinearLayout>
+
+        <!--<android.support.v4.view.ViewPager-->
+        <!--android:id="@+id/mainViewPager"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:visibility="visible"-->
+        <!--app:layout_behavior="@string/appbar_scrolling_view_behavior" />-->
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/bannerrecyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-15dip"
+            android:visibility="visible" />
+
+
+    </LinearLayout>
+
+    <!--</com.baoyz.widget.PullRefreshLayout>-->
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_bannder">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/settingRecycle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:scrollbars="none" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_2"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:scaleType="fitXY"
+            android:src="@mipmap/icon_dash_horeral_line" />
+
+        <ImageView
+            android:layout_width="@dimen/px_2"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dip"
+            android:layout_marginTop="20dip"
+            android:scaleType="fitXY"
+            android:src="@mipmap/icon_dash_vertical_line" />
+
+    </FrameLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FB"
+    tools:context=".ui.personcenter.DeviceStatisticesBaseActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="无人机选择" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:id="@+id/device_some"
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:layout_below="@+id/app_bar_layout"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <ImageView
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@mipmap/icon_v02" />
+
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="10dip"
+            android:layout_weight="7.5"
+            android:orientation="vertical"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+
+                    android:gravity="right|center_vertical"
+                    android:text="@string/DeviceManagerActivity_tv7" />
+
+                <TextView
+                    android:id="@+id/tv_devicename"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:ellipsize="end"
+                    android:gravity="left|center_vertical"
+                    android:lines="1"
+                    android:singleLine="true" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="right|center_vertical"
+                    android:text="SN " />
+
+                <TextView
+                    android:id="@+id/tv_sn"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:ellipsize="end"
+                    android:gravity="left|center_vertical"
+                    android:lines="1"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/DateChooseActivity_tv41" />
+
+                <TextView
+                    android:id="@+id/tv_teamname"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6"
+                    android:ellipsize="end"
+                    android:gravity="left|center_vertical"
+                    android:lines="1"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/goAuthLL"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="11dip"
+                android:layout_height="21dip"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dip"
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_next" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/first_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_below="@+id/device_some"
+        android:background="#DDDDDD" />
+
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_below="@+id/first_line"
+        android:layout_marginTop="20dip"
+        android:background="@color/white"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:drawableLeft="@mipmap/icon_face"
+            android:drawablePadding="5dip"
+            android:gravity="center"
+            android:text="@string/DateChooseActivity_tv21"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tv_select_rule"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="5dip"
+            android:drawableRight="@mipmap/icon_screen"
+            android:gravity="center"
+            android:text="@string/DateChooseActivity_tv22"
+            android:textSize="11sp" />
+
+    </RelativeLayout>
+
+
+    <include
+        android:id="@+id/basedata"
+        layout="@layout/item_statiticsbasedata"
+        android:layout_width="match_parent"
+        android:layout_height="130dip"
+        android:layout_below="@+id/title" />
+
+    <View
+        android:id="@+id/sencond_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_below="@+id/basedata"
+        android:background="#DDDDDD" />
+
+
+    <TextView
+        android:id="@+id/check_detail"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_below="@+id/sencond_line"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="@string/DateChooseActivity_tv23"
+        android:textColor="#57ADED" />
+
+</RelativeLayout>

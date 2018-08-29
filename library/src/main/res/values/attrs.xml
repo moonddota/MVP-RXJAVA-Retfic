@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- style for MaterialRefreshLayout  -->
+    <declare-styleable name="MaterialRefreshLayout">
+        <attr name="overlay" format="boolean" tools:ignore="ResourceName" />
+        <!-- style for MaterialWaveView  -->
+        <attr name="wave_height_type" format="enum" tools:ignore="ResourceName">
+            <enum name="normal" value="0" />
+            <enum name="higher" value="1" />
+        </attr>
+        <attr name="wave_color" format="color" tools:ignore="ResourceName" />
+        <attr name="wave_show" format="boolean" tools:ignore="ResourceName" />
+        <!-- style for CircleProgressBar  -->
+        <attr name="progress_colors" format="reference" tools:ignore="ResourceName" />
+        <attr name="progress_stoke_width" format="dimension" tools:ignore="ResourceName" />
+        <attr name="progress_backgroud_color" format="color" tools:ignore="ResourceName" />
+        <attr name="progress_show_arrow" format="boolean" tools:ignore="ResourceName" />
+        <attr name="progress_arrow_width" format="dimension" tools:ignore="ResourceName" />
+        <attr name="progress_arrow_height" format="dimension" tools:ignore="ResourceName" />
+        <attr name="progress_show_circle_backgroud" format="boolean" tools:ignore="ResourceName" />
+        <attr name="progress_value" format="integer" tools:ignore="ResourceName" />
+        <attr name="progress_max_value" format="integer" tools:ignore="ResourceName" />
+        <attr name="MaterialRefreshLayout_progress_text_size" format="dimension" tools:ignore="ResourceName" />
+        <attr name="MaterialRefreshLayout_progress_text_color" format="color" tools:ignore="ResourceName" />
+        <attr name="progress_text_visibility" format="enum" tools:ignore="ResourceName">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+        </attr>
+        <attr name="progress_size_type" format="enum" tools:ignore="ResourceName">
+            <enum name="normal" value="0"></enum>
+            <enum name="big" value="1"></enum>
+        </attr>
+        <attr name="isLoadMore" format="boolean" tools:ignore="ResourceName"></attr>
+    </declare-styleable>
+</resources>

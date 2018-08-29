@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mac_ll"
+    android:layout_width="match_parent"
+    android:layout_height="130dip"
+    android:layout_gravity="center_vertical"
+    android:layout_marginBottom="5dip"
+    android:layout_marginTop="5dip"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:weightSum="3">
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_marginRight="1dip"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginBottom="5dip"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/total_area"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="10"
+                android:gravity="bottom|center_horizontal"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/px_44" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dip"
+            android:layout_weight="1"
+            android:gravity="top|center_horizontal"
+            android:text="@string/DateChooseActivity_tv24" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dip"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dip"
+        android:layout_marginTop="20dip"
+        android:background="#DDDDDD" />
+
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_marginRight="1dip"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginBottom="5dip"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/total_hour"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="10"
+                android:gravity="bottom|center_horizontal"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/px_44" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dip"
+            android:layout_weight="1"
+            android:gravity="top|center_horizontal"
+            android:text="@string/DateChooseActivity_tv25" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dip"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dip"
+        android:layout_marginTop="20dip"
+        android:background="#DDDDDD" />
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_marginRight="1dip"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginBottom="5dip"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/fly_object"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="10"
+                android:gravity="bottom|center_horizontal"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/px_44" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dip"
+            android:layout_weight="1"
+            android:gravity="top|center_horizontal"
+            android:text="@string/DateChooseActivity_tv26" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

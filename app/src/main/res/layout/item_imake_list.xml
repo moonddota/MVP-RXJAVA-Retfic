@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="130dip">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="10dip"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+
+        <TextView
+            android:id="@+id/fg_imake_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:scaleType="centerCrop"
+            android:textColor="#333333"
+            android:textSize="@dimen/px_32" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="8"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:id="@+id/imake_item_ll_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="7"
+                    android:src="@mipmap/icon_team_header" />
+
+                <app.com.skylinservice.manager.customeview.MarqueTextView
+                    android:id="@+id/team_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="3"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/px_20" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/imake_item_ll_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+
+                android:orientation="vertical"
+                android:weightSum="10">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="7"
+                    android:src="@mipmap/icon_team_header" />
+
+                <app.com.skylinservice.manager.customeview.MarqueTextView
+                    android:id="@+id/team_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="3"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:textSize="@dimen/px_20" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/imake_item_ll_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+
+                android:orientation="vertical"
+                android:weightSum="10">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="7"
+                    android:src="@mipmap/icon_team_header" />
+
+                <app.com.skylinservice.manager.customeview.MarqueTextView
+                    android:id="@+id/team_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="3"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:gravity="center"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:textSize="@dimen/px_20" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/imake_item_ll_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="7"
+                    android:src="@mipmap/icon_team_header" />
+
+                <app.com.skylinservice.manager.customeview.MarqueTextView
+                    android:id="@+id/team_4"
+                    android:layout_width="match_parent"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:layout_height="0dip"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textSize="@dimen/px_20" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/imake_item_ll_5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+                <ImageView
+                    android:id="@+id/item_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_margin="10dip"
+                    android:layout_weight="10"
+                    android:src="@mipmap/icon_more" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dip"
+        android:layout_gravity="bottom"
+        android:background="#EEE" />
+</FrameLayout>

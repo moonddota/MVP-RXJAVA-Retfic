@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dip"
+        android:layout_marginBottom="20dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="30dip"
+        android:layout_marginTop="20dip"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/softcent_app_icon"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:scaleType="centerCrop" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="10dip"
+            android:layout_weight="7"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/softcent_app_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="4"
+                android:maxLines="1"
+                android:textColor="#333333"
+                android:textSize="@dimen/text_size_30_px" />
+
+            <app.com.skylinservice.manager.customeview.MarqueTextView
+                android:id="@+id/softcent_app_des"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="6"
+                android:textColor="#888888"
+                android:textSize="@dimen/text_size_24_px"
+
+                />
+
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:id="@+id/softcenter_download_ff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/softcenter_download_state"
+                android:layout_width="60dip"
+                android:layout_height="30dip"
+                android:layout_gravity="center"
+                android:background="@drawable/mcontrolgreenbg"
+                android:gravity="center"
+                android:text="下载"
+                android:textSize="8sp"
+                android:textColor="@color/green3"
+                android:visibility="visible" />
+
+            <FrameLayout
+                android:id="@+id/softcenter_download_loadFrame"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:visibility="invisible">
+
+                <com.dinuscxj.progressbar.CircleProgressBar
+                    android:id="@+id/softcenter_download_prgrogress"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    app:background_color="@android:color/white"
+
+                    app:draw_progress_text="false"
+                    app:line_count="30"
+                    app:line_width="4dp"
+                    app:progress_background_color="@color/light_progress_grey"
+
+                    app:progress_end_color="@color/green3"
+                    app:progress_shader="sweep"
+                    app:progress_start_color="@color/green3"
+                    app:progress_stroke_cap="round"
+
+                    app:progress_stroke_width="4dp"
+
+                    app:progress_text_color="@android:color/black"
+
+                    app:progress_text_format_pattern="%d%%"
+                    app:progress_text_size="30px"
+                    app:style="solid_line" />
+
+                <ImageView
+                    android:id="@+id/stateiv"
+                    android:layout_width="15dip"
+                    android:layout_height="15dip"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/icon_continue" />
+
+
+                <ImageView
+                    android:id="@+id/waitingiv"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    android:visibility="invisible" />
+            </FrameLayout>
+
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dip"
+        android:layout_gravity="bottom"
+        android:background="#EEE" />
+
+
+</LinearLayout>
